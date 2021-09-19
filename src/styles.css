@@ -1,0 +1,71 @@
+/* @import url('/fonts/stylesheet.css'); */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    
+    .btn{
+        @apply rounded-full transition-all ease-in-out duration-200 ;
+    }
+    
+    .btn-nav{
+        @apply flex items-center py-3 px-5  hover:bg-secondary-lighter
+        mr-auto mb-3 ;
+    }
+
+    .btn-primary{
+        @apply text-white text-lg bg-primary-blue font-bold w-12 h-12 desktop:h-auto desktop:w-full px-4 py-3 mr-auto
+        hover:bg-primary-darkblue;
+    }
+
+    .btn-secondary{
+        @apply text-sm font-bold rounded-full bg-secondary-darkest px-4 py-2 text-white;
+    }
+
+    .trend {
+        @apply text-left leading-tight text-sm text-secondary-dark;
+    }
+
+    .trending {
+        @apply w-full flex justify-between hover:bg-secondary-lighter px-4 py-2;
+    }
+
+    .svg{
+        @apply fill-current text-secondary-darker;
+    }
+}
+
+
+
+@layer base{
+    @font-face {
+        font-family: 'Segoe UI Variable Static Text';
+        src: url('SegoeUIVariableStatic-2580000-a8000.woff2') format('woff2'),
+            url('SegoeUIVariableStatic-2580000-a8000.woff') format('woff');
+        font-weight: 600;
+        font-style: normal;
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: 'Segoe UI Variable Static Text';
+        src: url('SegoeUIVariableStatic-1900000-a8000.woff2') format('woff2'),
+            url('SegoeUIVariableStatic-1900000-a8000.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: 'Segoe UI Variable Static Text';
+        src: url('SegoeUIVariableStatic-2bc0000-a8000.woff2') format('woff2'),
+            url('SegoeUIVariableStatic-2bc0000-a8000.woff') format('woff');
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+    }
+    
+    
+}
